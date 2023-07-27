@@ -38,20 +38,21 @@ margin: 200px auto;
 .chec__span {
   position: relative;
   display: inline-block;
-  width: 200px;
-  height: 120px;
+  width: 400px;
+  height: 240px;
   background-image: url("./images/luna.jpg");
-  background-size: contain;
-  border-radius: 60px;
+  background-size: 400px 200px;
+  border-radius: 120px;
+  transition: background-image 0.4s linear;
 }
 .chec__span::before {
   position: absolute;
-  margin-left: 10px;
-  top: 10px;
-  height: 10px;
+  margin-left: 20px;
+  top: 20px;
+  height: 20px;
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-image: url(./images/tun.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -61,12 +62,15 @@ margin: 200px auto;
 }
 .chec-input:checked + .chec__span {
   background-image: url("./images/dey.jpg");
+  background-repeat: no-repeat;
+  background-size: 400px 300px;
+  transition: background-image 0.4s linear;
 }
 .chec-input:checked + .chec__span::before {
-  left: 80px;
+  left: 160px;
   background-image: url(./images/ertalab.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 200px 200px;
 }
 /* Header section finished */
 /* Main section started */
